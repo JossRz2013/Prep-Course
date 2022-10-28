@@ -16,7 +16,7 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 5;
+const nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 5;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-return 'str';
+return str;
 }
 
 function suma(x, y) {
@@ -110,7 +110,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (2 % 0){
+  if (num %2 === 0){
     return true;
   } else {
     return false;
@@ -121,7 +121,7 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (2 % 1){
+  if (num % 2 === 1){
     return true;
   } else{
     return false;
@@ -144,7 +144,7 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return Math.expm1(num, exponent);
+  return Math.pow(num, exponent);
 }
 
 function redondearNumero(num) {
@@ -184,15 +184,16 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  return "str" + "!";
+  return str + "!";
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var combinado = nombre + '' + apellido;
-  return combinado; 
+  var combinado = nombre + " " + apellido;
+  return combinado;
+   
 }
 
 function obtenerSaludo(nombre) {
@@ -227,10 +228,8 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  var Tcambio = 1.20;
-  var euros = 15;
-  return euros / Tcambio;
-}
+     return euro * 1.2
+  }
 
 
 function esVocal(letra){
@@ -242,7 +241,7 @@ function esVocal(letra){
   if (letra.length > 1) {
     return "Dato incorrecto"
   }     
-  if (letra === a, letra === e, letra === i, letra === o, letra === u) {
+  if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
     return "Es vocal"
   } else {
     return "Dato incorrecto"
