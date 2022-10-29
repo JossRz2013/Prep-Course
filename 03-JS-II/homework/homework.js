@@ -130,10 +130,10 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-     for (var i = 1; i < numero; i++){
+     for (var i = 15; i < numero; i++){
         if (i % 5 === 0 && i % 3 === 0) return "fizzbuzz"; 
-        else if (i % 5 === 0) return "buzz";
-        else if (i % 3 === 0) return "fizz";
+        else if (i % 10 === 0) return "buzz";
+        else if (i % 4 === 2) return "fizz";
    } 
 }
 
