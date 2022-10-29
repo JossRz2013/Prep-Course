@@ -5,11 +5,9 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if (x > y){
+  if (x >= y){
     return x;
-  } else if (x === y){
-    return y;
-  }
+  } 
 }
 
 function mayoriaDeEdad(edad) {
@@ -48,20 +46,20 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  switch(saludo){
-      case "aleman":
-            return "Guten Tag!";
-    
-      case "mandarin":
-            return "Ni Hao!";
-    
-      case "ingles":
-            return "Hello!";
-    
-      case undefined:
-            return "Hola!";
+   if (idioma === "aleman"){
+     return "Guten Tag!";
+   } else{
+      if (idioma === "mandarin"){
+      return "Ni Hao!";
+    } else{
+        if (idioma === "ingles"){
+        return "Hello!"
+      } else{
+        return "Hola!"
+      }
+    }  
   }
-}  
+ }
 
 function colors(color) {
   //La función recibe un color. Devolver el string correspondiente:
@@ -94,7 +92,7 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero = 10 || 5){
+  if (numero === 10 || numero === 5){
     return true;
   } else{
     return false;
@@ -132,17 +130,12 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-   if (numero % 6 === 0){
-      return "fizz";
-   } else if (numero % 5 === 1){
-      return "buzz";
-   } else if (numero % 30 === 0){
-      return "fizzbuzz";
-   } else {
-      return numero;
-   }
-  }
-
+     for (var i = 1; i < numero; i++){
+        if (i % 5 === 0 && i % 3 === 0) return "fizzbuzz"; 
+        else if (i % 5 === 0) return "buzz";
+        else if (i % 3 === 0) return "fizz";
+   } 
+}
 
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos. 
@@ -153,15 +146,21 @@ function operadoresLogicos(num1, num2, num3) {
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
 
   if (num1 > 1 || num2 === -1 || num3 > 3){
-    return "Hay negativos";
-  } else if (num1 === 0 || num2 === 0 || num3 === 0){
-    return "Error";
-  } else if ((num1 > 0) && ((num1 > num2) && (num1 > num3))){
-    return "Número 1 es mayor y positivo";
-  } else if ((num3 > num1) && (num3 > num2)){
-    return num3++;
+    return "Hay negativo";
   } else {
-    return false;
+    if (num1 === 0 || num2 === 0 || num3 === 0){
+      return "Error";
+  } else {
+    if ((num1 > 0) && ((num1 > num2) && (num1 > num3))){
+      return "Número 1 es mayor y positivo";
+    } else {
+      if ((num3 > num1) && (num3 > num2)){
+      return num3++;
+    } else {
+        return false;
+       }
+     }
+    }
   }
 }
 
@@ -196,9 +195,11 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  for (var i = 0; i <= 60; i+=6){
-        return i + ", ";
+  var ArrayTab6 = []
+  for (var i = 0; i <= 10; i++){
+        ArrayTab6.push(6 * i);
       }
+      return ArrayTab6
   }
 
 function tieneTresDigitos(numero){
