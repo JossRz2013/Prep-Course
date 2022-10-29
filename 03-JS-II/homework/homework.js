@@ -222,7 +222,7 @@ function doWhile(numero) {
     y= y + 5;
     
    } while (i < 8);
-     return a;
+     return y;
 }
 
 
