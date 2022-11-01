@@ -285,6 +285,17 @@ function continueStatement(numero) {
   //Pista: usá el statement 'continue'
   // Tu código:
   
+  var numero = [];
+  var suma = n;
+  for(var i = 0; i < 12; i++){
+      if(i === 5){
+       continue;
+    } else{
+      suma = suma + 2;
+      numero.push(suma);
+    }
+  }
+    return numero;
 }
 
 
