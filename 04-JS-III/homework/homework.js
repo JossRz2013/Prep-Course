@@ -1,7 +1,5 @@
 // No cambies los nombres de las funciones.
 
-
-
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
@@ -127,11 +125,11 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-   const numeros = [15, 64, 25, 34, 48];
+   const numer = [15, 64, 25, 34, 48];
      let max = 0;
-     for (let i = 0; i < numeros.length; i++){
-        if (max < numeros[i]);
-        max = numeros[i];
+     for (let i = 0; i < numer.length; i++){
+        if (max < numer[i]);
+        max = numer[i];
    }
       return [max];
 
