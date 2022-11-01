@@ -257,19 +257,19 @@ function breakStatement(numero) {
   //Pista: usá el statement 'break'
   // Tu código:
 
-  var numero = [];
-  var suma = n;
+  var arraynuevo = [];
+  var suma = numero;
   for(var i = 0; i < 10; i++){
     suma = suma + 2;
     if(summa === i){
        break;
     } else{
-      numero.push(suma);
+      arraynuevo.push(suma);
     }
   }
-  if (numero.length < 10){
+  if (arraynuevo.length < 10){
     return "Se interrumpio la ejecución";
-  }else if (numero.length === 10){
+  }else if (arraynuevo.length === 10){
     return numero;
   }
 }
@@ -283,17 +283,17 @@ function continueStatement(numero) {
   //Pista: usá el statement 'continue'
   // Tu código:
   
-  var numero = [];
-  var suma = n;
+  var nuevoarray = [];
+  var suma = numero;
   for(var i = 0; i < 12; i++){
       if(i === 5){
        continue;
     } else{
       suma = suma + 2;
-      numero.push(suma);
+      nuevoarray.push(suma);
     }
   }
-    return numero;
+    return nuevoarray;
 }
 
 
