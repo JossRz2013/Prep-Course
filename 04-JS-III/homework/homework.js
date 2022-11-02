@@ -1,6 +1,5 @@
 // No cambies los nombres de las funciones.
 
-
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
@@ -27,9 +26,10 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var arrayup = []
       for (var i = 0; i < array.length; i++){
-    array.push(array[i]+1);
-    return array;
+    arrayup.push(array[i]+1);
+    return arrayup;
   }
 }
 
@@ -68,7 +68,7 @@ function arrayContiene(array, elemento) {
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
 
-  var elemento = 1;
+  var elemento = 0;
   for (var i = 0; i < array.length; i++){
   if (array[i] === elemento){
       return true
@@ -111,10 +111,11 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+   const numer = [15, 64, 25, 34, 48];
        var max = 0;
-     for (var i = 0; i < numeros.length; i++){
-        if (max < numeros(i));
-        max = numeros(i);
+     for (var i = 0; i < numer.length; i++){
+        if (max < numer(i));
+        max = numer(i);
    }
       return max;
 }
@@ -157,9 +158,11 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-    if (numeroDeDia === 1 || numeroDeDia === 7){
+
+  var numDeDia = numeroDeDia;
+  if (numDeDia === 1 || numDeDia === 7){
     return "Es fin de semana";
-  } else if (numeroDeDia > 1 && numeroDeDia < 7){
+  } else if (numDeDia > 1 && numDeDia < 7){
     return "Es dia Laboral";
   }
 } 
@@ -170,8 +173,8 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
 
-  var n = n.toString();
-  if(n[0] === "9"){
+  var y = n.toString();
+  if(y[0] === "9"){
     return true;
   }else{
     return false;
@@ -219,13 +222,13 @@ function mayorACien(array) {
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
 
-  var array = [];
+  var masde100 = [];
     for( var i = 0; i > array.length -1; i++){
     if(array[i] > 100 && array[i] <= 200){
-      array.push(array[i]);
+      masde100.push(array[i]);
     }
   }
-  return array;
+  return masde100;
 }
 
 
@@ -302,4 +305,4 @@ module.exports = {
   mayorACien,
   breakStatement,
   continueStatement
-}
+};
