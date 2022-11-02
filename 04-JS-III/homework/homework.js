@@ -10,7 +10,7 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  return array.length - 1;
+  return array[array.length - 1];
 }
 
 
@@ -26,9 +26,11 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-    for (let i = 0; i < array.length; i++){
-    return array;
-  }
+  var arrayConAumento = [];
+    for (var i = 0; i < array.length; i++){
+      arrayConAumento.push(array[i]+1);
+    }  
+    return arrayConAumento;
 }
 
 
@@ -36,8 +38,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  array.push("elemento");
-  return array;
+  return array.push("elemento");
 }
 
 
@@ -46,8 +47,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  array.unshift("elemento");
-  return array;
+  return array.unshift("elemento");
 }
 
 
@@ -65,12 +65,13 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  if (array[0] = elemento){
-    return true
-  }else{
-    return false
+  for (var i=0; i < array.length; i++){
+    if(array[i] === elemento);
+    return true;
   }
+    return false;
 }
+
 
 
 function agregarNumeros(numeros) {
