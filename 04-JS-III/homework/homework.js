@@ -68,10 +68,12 @@ function arrayContiene(array, elemento) {
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
   for (var i=0; i < array.length; i++){
-    if(array[i] === elemento);
-    return true;
+    if(array[i] === elemento){
+      return true;
+    }  else {
+      return false
+    }
   }
-    return false;
 }
 
 
@@ -80,9 +82,10 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-
-  const edades = [18, 20, 25, 30];
-  return edades[0] + [1] + [2] + [3];
+  for (var i = 0; i < numeros.length; i++){
+    suma += numeros.length;
+    return suma;
+  }
 }
 
 
@@ -91,18 +94,11 @@ function promedioResultadosTest(resultadosTest) {
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
 
-  const resultadosTests = [10, 10, 10];
-  for (const resultadosTest of resultadosTests){
-      return resultadosTest;
-    }
-    let promedio = 0;
-    for (let i = 0; i < resultadosTest.length; i++){
-    if (suma = resultadosTest([0] +[1] +[2]+ [3])){
-      promedio = suma / 4;
-    }
-    return [promedio];
+    var promedio = 0;
+    for (var i = 0; i < resultadosTest.length; i++){
+        promedio += resultadosTest.length / resultadosTest.length -1;
+        return promedio;
   }
-
 }
 
 
@@ -110,14 +106,13 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-   const numer = [15, 64, 25, 34, 48];
-     let max = 0;
-     for (let i = 0; i < numer.length; i++){
-        if (max < numer[i]);
-        max = numer[i];
-   }
-      return [max];
-
+     var max = 0;
+     for (var i = 0; i < numeros.length; i++){
+        if (numeros[i]>max){
+        max = numeros[i];
+     }
+  }
+    return max;
 }
 
 
@@ -142,15 +137,13 @@ if (arguments.length === 0){
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-
-
-  var arrayContiene = [0];
+  var contenedor = 0;
   for (var i = 0; i < arreglo.length; i++){
     if (arreglo[i] > 18){
-      arrayContiene.push(arreglo[i]);
+      contenedor += 1
     }
   }
-  return arrayContiene;
+  return contenedor;
 }
 
 
@@ -190,7 +183,7 @@ function todosIguales(arreglo) {
 
 
   for(var i = 0; i < arreglo.length - 1; i++){
-    if(arrglo[i] !== arreglo[i + 1]){
+    if(arreglo[i] !== arreglo[i + 1]){
       return false;
     }
   }
@@ -206,13 +199,11 @@ function mesesDelAño(array) {
   var meses = [];
   for (var i = 0; i < array.length; i++){
     if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre"){
-      return meses.push(array[i]);
+      meses.push(array[i]);
+      return meses;
+    } else{
+      return "No se encontraron los meses pedidos";
     }
-  }
-  if (meses.length === 3){
-    return meses;
-  } else{
-    return "No se encontraron los meses pedidos";
   }
 }
 
