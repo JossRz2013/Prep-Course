@@ -216,7 +216,7 @@ function mayorACien(array) {
   // Tu código:
 var nuevoArray = [];
   for( var i = 0; i > array.length; i++){
-    if(array[i] > 100 && array[i] < 200){
+    if(array[i] > 100){
       nuevoArray.push(array[i]);
     }
   }
@@ -240,12 +240,12 @@ function breakStatement(numero) {
     if(suma === i){
        break;
     } else{
-      arraynuevo.push(array[i]+2);
+      arraynuevo.push(suma);
     }
   }
-  if (arraynuevo.length < 10){
+  if (i < 10){
     return "Se interrumpió la ejecución";
-  }else if (arraynuevo.length === 10){
+  }else {
     return arraynuevo;
   }
 }
@@ -261,10 +261,9 @@ function continueStatement(numero) {
   
   var nuevoarray = [];
   var suma = numero;
-  for(var i = 0; i < 11; i++){
-      if(i === 5){
-        continue;
-    } else{
+  for(var i = 0; i < 10; i++){
+      if(i === 5) continue;
+     else{
       suma = suma + 2;
       nuevoarray.push(suma);
     }
