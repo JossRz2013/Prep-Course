@@ -3,27 +3,21 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
-  var a = ironman, b = hulk, c = thor, d= loky;
-  const marvel = [a, b, c, d];
-  return marvel [0];
+  return array [0];
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-
-  const marvel =[ironman, hulk, thor, loky];
-  return (marvel[3]);
+  return array.length - 1;
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-
-  const marvel = [ironman, hulk, thor, loky];
-  return marvel.length
+  return array.length;
 }
 
 
@@ -32,12 +26,9 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-
-  const tomo = [1, 2, 3, 4];
-  for (let i = 0; i < tomo; i++){
-    return tomo[i];
+    for (let i = 0; i < array.length; i++){
+    return array;
   }
-
 }
 
 
@@ -45,10 +36,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-
-  const marvel =[ironman, hulk, thor, loky];
-  marvel.push(Cap);
-  return marvel;
+  array.push("elemento");
+  return array;
 }
 
 
@@ -57,10 +46,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-
-  const marvel =[ironman, hulk, thor, loky];
-  marvel.unshift(steven);
-  return marvel;
+  array.unshift("elemento");
+  return array;
 }
 
 
@@ -70,10 +57,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-
-  const saludos = [Hola, mundo, como, estan, todos];
-  const saludosString = saludos.join(", ");
-  return ; saludosString
+  return palabras.join(" ");
 }
 
 
@@ -81,9 +65,7 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-
-  const marvel =[ironman, hulk, thor, loky];
-  if (marvel [0] = iroman){
+  if (array[0] = elemento){
     return true
   }else{
     return false
