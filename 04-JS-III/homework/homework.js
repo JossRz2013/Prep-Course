@@ -4,8 +4,12 @@ function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
 
-  const marvel =[ironman, hulk, thor, loky];
-  return marvel [0];
+    var array = []
+  for (var i = 0; i < array.length; i++){
+      if(array[i] === 4){
+      return array [0];
+    }
+  }
 }
 
 
@@ -13,8 +17,8 @@ function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
 
-  const marvel =[ironman, hulk, thor, loky];
-  return (marvel[3]);
+  const array=["ironman", "hulk", "thor", "loky"];
+  return array[array.length - 1];
 }
 
 
@@ -22,7 +26,7 @@ function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
 
-  const marvel = [ironman, hulk, thor, loky];
+  const marvel = ["ironman", "hulk", "thor", "loky"];
   return marvel.length
 }
 
@@ -32,22 +36,19 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-
-  const tomo = [1, 2, 3, 4];
-  for (let i = 0; i < tomo; i++){
-    return tomo[i];
+  const array = [1, 2, 3, 4]
+  for (var i = 0; i < array.length; i++){
+    return array[i];
   }
-
 }
-
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
 
-  const marvel =[ironman, hulk, thor, loky];
-  marvel.push(Cap);
+  const marvel =["ironman", "hulk", "thor", "loky"];
+  marvel.push("Cap");
   return marvel;
 }
 
@@ -58,8 +59,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // Pista: usa el método `.unshift`
   // Tu código:
 
-  const marvel =[ironman, hulk, thor, loky];
-  marvel.unshift(steven);
+  const marvel =["ironman", "hulk", "thor", "loky"];
+  marvel.unshift("steven");
   return marvel;
 }
 
@@ -71,19 +72,18 @@ function dePalabrasAFrase(palabras) {
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
 
-  const saludos = [Hola, mundo, como, estan, todos];
+  const saludos = ["Hola", "mundo", "como", "estan", "todos"];
   const saludosString = saludos.join(", ");
-  return ; saludosString
+  return saludosString;
 }
-
 
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
 
-  const marvel =[ironman, hulk, thor, loky];
-  if (marvel [0] = iroman){
+  const marvel =["ironman", "hulk", "thor", "loky"];
+  if (marvel [0] === "iroman"){
     return true
   }else{
     return false
@@ -96,8 +96,14 @@ function agregarNumeros(numeros) {
   // Suma todos los enteros y devuelve el valor
   // Tu código:
 
-  const edades = [18, 20, 25, 30];
-  return edades[0] + [1] + [2] + [3];
+  var arrayEnteros = [];
+  var numero = suma;
+  for (var i =0; i < arrayEnteros -1; i++){
+    if (arrayEnteros > 10){
+      suma = arrayEnteros[i] + 1;
+      return numero [i];
+    }
+  }
 }
 
 
@@ -106,7 +112,7 @@ function promedioResultadosTest(resultadosTest) {
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
 
-  const resultadosTests = [10, 10, 10];
+  const resultadosTests = [12, 12, 12];
   for (const resultadosTest of resultadosTests){
       return resultadosTest;
     }
@@ -126,13 +132,12 @@ function numeroMasGrande(numeros) {
   // Devuelve el número más grande
   // Tu código:
    const numer = [15, 64, 25, 34, 48];
-     let max = 0;
-     for (let i = 0; i < numer.length; i++){
-        if (max < numer[i]);
-        max = numer[i];
+     var max = 0;
+     for (var i = 0; i < numer.length; i++){
+        if (max < numer(i));
+        max = numer(i);
    }
-      return [max];
-
+      return max;
 }
 
 
@@ -158,11 +163,10 @@ function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
 
-
-  var arrayContiene = [0];
-  for (var i = 0; i < arreglo.length; i++){
+  var arrayContiene = (0);
+  for (var i = 0; i < arreglo.length -1; i++){
     if (arreglo[i] > 18){
-      arrayContiene.push(arreglo[i]);
+      arrayContiene = arreglo(i);
     }
   }
   return arrayContiene;
@@ -205,7 +209,7 @@ function todosIguales(arreglo) {
 
 
   for(var i = 0; i < arreglo.length - 1; i++){
-    if(arrglo[i] !== arreglo[i + 1]){
+    if (arreglo[i] !== arreglo[i + 1]){
       return false;
     }
   }
@@ -221,7 +225,8 @@ function mesesDelAño(array) {
   var meses = [];
   for (var i = 0; i < array.length; i++){
     if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre"){
-      return meses.push(array[i]);
+      meses.push(array[i]);
+      return meses;
     }
   }
   if (meses.length === 3){
@@ -237,14 +242,13 @@ function mayorACien(array) {
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
 
-  for( var i = 0; i > array; i++){
-    if(array[i] > 100){
-      return array.push(array[i]);
+  var masde100 = [];
+    for( var i = 0; i > array.length -1; i++){
+    if(array[i] > 100 && array[i] <= 200){
+      masde100.push(array[i]);
     }
   }
-  if (array > 100 && array <= 200){
-    return array;
-  }
+  return masde100;
 }
 
 
@@ -261,7 +265,7 @@ function breakStatement(numero) {
   var suma = numero;
   for(var i = 0; i < 10; i++){
     suma = suma + 2;
-    if(summa === i){
+    if(suma === i){
        break;
     } else{
       arraynuevo.push(suma);
@@ -285,15 +289,15 @@ function continueStatement(numero) {
   
   var nuevoarray = [];
   var suma = numero;
-  for(var i = 0; i < 12; i++){
-      if(i === 5){
-       continue;
+  for(var i = 0; i < 11; i+2){
+      if (i === 5){ 
+        continue;
     } else{
-      suma = suma + 2;
+      suma = suma +2;
       nuevoarray.push(suma);
     }
   }
-    return nuevoarray;
+  return nuevoarray;
 }
 
 
