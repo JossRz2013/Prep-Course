@@ -4,10 +4,10 @@ function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
 
-    var array = []
-  for (var i = 0; i < array.length; i++){
-      if(array[i] === 4){
-      return array [0];
+    var arra = []
+  for (var i = 0; i < arra.length; i++){
+      if(arra[i] === 4){
+      return arra [0];
     }
   }
 }
