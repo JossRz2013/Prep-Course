@@ -68,7 +68,7 @@ function arrayContiene(array, elemento) {
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
 
-  var elemento = 0;
+  var elemento = 1;
   for (var i = 0; i < array.length; i++){
   if (array[i] === elemento){
       return true
@@ -158,11 +158,9 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-
-  var numDeDia = numeroDeDia;
-  if (numDeDia === 1 || numDeDia === 7){
+    if (numeroDeDia === 1 || numeroDeDia === 7){
     return "Es fin de semana";
-  } else if (numDeDia > 1 && numDeDia < 7){
+  } else if (numeroDeDia > 1 && numeroDeDia < 7){
     return "Es dia Laboral";
   }
 } 
@@ -173,8 +171,8 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
 
-  var y = n.toString();
-  if(y[0] === "9"){
+  var n = n.toString();
+  if(n[0] === "9"){
     return true;
   }else{
     return false;
@@ -222,13 +220,13 @@ function mayorACien(array) {
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
 
-  var masde100 = [];
+  var array = [];
     for( var i = 0; i > array.length -1; i++){
     if(array[i] > 100 && array[i] <= 200){
-      masde100.push(array[i]);
+      array.push(array[i]);
     }
   }
-  return masde100;
+  return array;
 }
 
 
