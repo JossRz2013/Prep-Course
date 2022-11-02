@@ -98,7 +98,7 @@ function promedioResultadosTest(resultadosTest) {
     for (var i = 0; i < resultadosTest.length; i++){
         promedio += resultadosTest[i];
   }
-  return promedio / 3;
+  return promedio / resultadosTest.length;
 }
 
 
@@ -216,7 +216,7 @@ function mayorACien(array) {
   // Tu código:
 var nuevoArray = [];
   for( var i = 0; i > array.length; i++){
-    if(array[i] > 100){
+    if(array[i] > 100 && array[i < 200]){
       nuevoArray.push(array[i]);
     }
   }
@@ -260,13 +260,13 @@ function continueStatement(numero) {
   // Tu código:
   
   var nuevoarray = [];
-  var numero = suma;
-  for(var i = 0; i < 10; i++){
+  var suma = numero;
+  for(var i = 0; i < 11; i++){
       if(i === 5){
         continue;
     } else{
       suma = suma + 2;
-      nuevoarray.push(numero[i]);
+      nuevoarray.push(suma);
     }
   }
     return nuevoarray;
