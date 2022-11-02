@@ -111,11 +111,10 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-   const numer = [15, 64, 25, 34, 48];
-     var max = 0;
-     for (var i = 0; i < numer.length; i++){
-        if (max < numer(i));
-        max = numer(i);
+       var max = 0;
+     for (var i = 0; i < numeros.length; i++){
+        if (max < numeros(i));
+        max = numeros(i);
    }
       return max;
 }
@@ -303,4 +302,4 @@ module.exports = {
   mayorACien,
   breakStatement,
   continueStatement
-};
+}
