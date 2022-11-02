@@ -17,8 +17,8 @@ function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
 
-  const array=["ironman", "hulk", "thor", "loky"];
-  return array[array.length - 1];
+  const arra=["ironman", "hulk", "thor", "loky"];
+  return arra[arra.length - 1];
 }
 
 
@@ -36,9 +36,9 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  const array = [1, 2, 3, 4]
-  for (var i = 0; i < array.length; i++){
-    return array[i];
+  const arra = [1, 2, 3, 4]
+  for (var i = 0; i < arra.length; i++){
+    return arra[i];
   }
 }
 
@@ -112,13 +112,13 @@ function promedioResultadosTest(resultadosTest) {
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
 
-  const resultadosTests = [12, 12, 12];
-  for (const resultadosTest of resultadosTests){
+  const resulTests = [12, 12, 12];
+  for (const resultadosTest of resulTests){
       return resultadosTest;
     }
     let promedio = 0;
-    for (let i = 0; i < resultadosTest.length; i++){
-    if (suma = resultadosTest([0] +[1] +[2]+ [3])){
+    for (let i = 0; i < resulT.length; i++){
+    if (suma = resulT([0] +[1] +[2]+ [3])){
       promedio = suma / 4;
     }
     return [promedio];
@@ -164,9 +164,9 @@ function cuentoElementos(arreglo){
   //Escribe tu código aquí
 
   var arrayContiene = (0);
-  for (var i = 0; i < arreglo.length -1; i++){
-    if (arreglo[i] > 18){
-      arrayContiene = arreglo(i);
+  for (var i = 0; i < arreg.length -1; i++){
+    if (arreg[i] > 18){
+      arrayContiene = arreg(i);
     }
   }
   return arrayContiene;
@@ -180,9 +180,9 @@ function diaDeLaSemana(numeroDeDia) {
   //Escribe tu código aquí   
 
 
-  if (numeroDeDia === 1 || numeroDeDia === 7){
+  if (numDeDia === 1 || numDeDia === 7){
     return "Es fin de semana";
-  } else if (numeroDeDia > 1 && numeroDeDia < 7){
+  } else if (numDeDia > 1 && numDeDia < 7){
     return "Es dia Laboral";
   }
 } 
@@ -193,8 +193,8 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
 
-  var n = n.toString();
-  if(n[0] === "9"){
+  var o = o.toString();
+  if(o[0] === "9"){
     return true;
   }else{
     return false;
@@ -208,8 +208,8 @@ function todosIguales(arreglo) {
   //Escribe tu código aquí
 
 
-  for(var i = 0; i < arreglo.length - 1; i++){
-    if (arreglo[i] !== arreglo[i + 1]){
+  for(var i = 0; i < arreg.length - 1; i++){
+    if (arreg[i] !== arreg[i + 1]){
       return false;
     }
   }
@@ -223,9 +223,9 @@ function mesesDelAño(array) {
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
   var meses = [];
-  for (var i = 0; i < array.length; i++){
-    if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre"){
-      meses.push(array[i]);
+  for (var i = 0; i < arra.length; i++){
+    if(arra[i] === "Enero" || arra[i] === "Marzo" || arra[i] === "Noviembre"){
+      meses.push(arra[i]);
       return meses;
     }
   }
@@ -243,9 +243,9 @@ function mayorACien(array) {
   // Tu código:
 
   var masde100 = [];
-    for( var i = 0; i > array.length -1; i++){
-    if(array[i] > 100 && array[i] <= 200){
-      masde100.push(array[i]);
+    for( var i = 0; i > arra.length -1; i++){
+    if(arra[i] > 100 && arra[i] <= 200){
+      masde100.push(arra[i]);
     }
   }
   return masde100;
@@ -262,7 +262,7 @@ function breakStatement(numero) {
   // Tu código:
 
   var arraynuevo = [];
-  var suma = numero;
+  var suma = numeros;
   for(var i = 0; i < 10; i++){
     suma = suma + 2;
     if(suma === i){
@@ -274,7 +274,7 @@ function breakStatement(numero) {
   if (arraynuevo.length < 10){
     return "Se interrumpio la ejecución";
   }else if (arraynuevo.length === 10){
-    return numero;
+    return numeros;
   }
 }
 
@@ -288,7 +288,7 @@ function continueStatement(numero) {
   // Tu código:
   
   var nuevoarray = [];
-  var suma = numero;
+  var suma = num;
   for(var i = 0; i < 11; i+2){
       if (i === 5){ 
         continue;
