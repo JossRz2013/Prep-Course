@@ -3,13 +3,21 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
-  return array[0];
+
+    var array = []
+  for (var i = 0; i < array.length; i++){
+      if(array[i] === 4){
+      return array [0];
+    }
+  }
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+
+  const array=["ironman", "hulk", "thor", "loky"];
   return array[array.length - 1];
 }
 
@@ -17,7 +25,9 @@ function devolverUltimoElemento(array) {
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-  return array.length
+
+  const marvel = ["ironman", "hulk", "thor", "loky"];
+  return marvel.length
 }
 
 
@@ -26,10 +36,9 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var arrayup = []
+  const array = [1, 2, 3, 4]
       for (var i = 0; i < array.length; i++){
-    arrayup.push(array[i]+1);
-    return arrayup;
+    return array[i];
   }
 }
 
@@ -38,8 +47,10 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-    array.push("elemnto");  
-    return array;
+
+  const marvel =["ironman", "hulk", "thor", "loky"];
+  marvel.push("Cap");
+  return marvel;
   }
 
 
@@ -48,8 +59,10 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  array.unshift("elemento");
-  return array;
+
+  const marvel =["ironman", "hulk", "thor", "loky"];
+  marvel.unshift("steven");
+  return marvel;
 }
 
 
@@ -59,24 +72,24 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-      return saludos.join(" ");
-}
 
+  const saludos = ["Hola", "mundo", "como", "estan", "todos"];
+  const saludosString = saludos.join(", ");
+  return saludosString;
+}
 
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
 
-  var elemento = 0;
-  for (var i = 0; i < array.length; i++){
-  if (array[i] === elemento){
+  const marvel =["ironman", "hulk", "thor", "loky"];
+  if (marvel [0] === "iroman"){
       return true
     }else{
       return false
     }
   }
-}
 
 
 function agregarNumeros(numeros) {
@@ -85,11 +98,11 @@ function agregarNumeros(numeros) {
   // Tu código:
 
   var arrayEnteros = [];
-  var suma = numeros;
+  var numero = suma;
   for (var i =0; i < arrayEnteros -1; i++){
     if (arrayEnteros > 10){
       suma = arrayEnteros[i] + 1;
-      return numeros [i];
+      return numero [i];
     }
   }
 }
@@ -99,11 +112,19 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-  var acumulador = 0;
-  for(var i = 0; i < resultadosTest.length; i++){
-    acumulador += resultadosTest[i];
+
+  const resultadosTests = [12, 12, 12];
+  for (const resultadosTest of resultadosTests){
+      return resultadosTest;
   }
-  return acumulador / resultadosTest.length
+    let promedio = 0;
+    for (let i = 0; i < resultadosTest.length; i++){
+    if (suma = resultadosTest([0] +[1] +[2]+ [3])){
+      promedio = suma / 4;
+    }
+    return [promedio];
+  }
+
 }
 
 
@@ -159,10 +180,10 @@ function diaDeLaSemana(numeroDeDia) {
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
 
-  var numDeDia = numeroDeDia;
-  if (numDeDia === 1 || numDeDia === 7){
+
+  if (numeroDeDia === 1 || numeroDeDia === 7){
     return "Es fin de semana";
-  } else if (numDeDia > 1 && numDeDia < 7){
+  } else if (numeroDeDia > 1 && numeroDeDia < 7){
     return "Es dia Laboral";
   }
 } 
@@ -173,8 +194,8 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
 
-  var y = n.toString();
-  if(y[0] === "9"){
+  var n = n.toString();
+  if(n[0] === "9"){
     return true;
   }else{
     return false;
@@ -268,13 +289,13 @@ function continueStatement(numero) {
   // Tu código:
   
   var nuevoarray = [];
-  var suma = numero;
-    for(var i = 0; i < 11; i+2){
-      if (i === 5){ 
+  var numero = suma;
+  for(var i = 0; i < 10; i++){
+      if(i === 5){
         continue;
     } else{
-      suma = suma +2;
-      nuevoarray.push(suma);
+      suma = suma + 2;
+      nuevoarray.push(numero[i]);
     }
   }
   return nuevoarray;
