@@ -70,10 +70,9 @@ function arrayContiene(array, elemento) {
   for (var i=0; i < array.length; i++){
     if(array[i] === elemento){
       return true;
-    }  else {
-      return false
     }
   }
+    return false;
 }
 
 
@@ -82,10 +81,11 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+  var caja = 0;
   for (var i = 0; i < numeros.length; i++){
-    suma += numeros.length;
-    return suma;
+    caja += numeros[i];
   }
+  return caja;
 }
 
 
@@ -96,9 +96,9 @@ function promedioResultadosTest(resultadosTest) {
 
     var promedio = 0;
     for (var i = 0; i < resultadosTest.length; i++){
-        promedio += resultadosTest.length / resultadosTest.length -1;
-        return promedio;
+        promedio += resultadosTest[i];
   }
+  return promedio / 3;
 }
 
 
@@ -196,14 +196,16 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-  var meses = [];
+  var arrayResultado = [];
   for (var i = 0; i < array.length; i++){
     if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre"){
-      meses.push(array[i]);
-      return meses;
-    } else{
-      return "No se encontraron los meses pedidos";
+      arrayResultado.push(array[i]);
     }
+  }
+  if (arrayResultado.length === 3){
+    return arrayResultado;
+  }else{
+    return "No se encontraron los meses pedidos";
   }
 }
 
@@ -212,15 +214,13 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
-
-  for( var i = 0; i > array; i++){
+var nuevoArray = [];
+  for( var i = 0; i > array.length; i++){
     if(array[i] > 100){
-      return array.push(array[i]);
+      nuevoArray.push(array[i]);
     }
   }
-  if (array > 100 && array <= 200){
-    return array;
-  }
+  return nuevoArray;
 }
 
 
@@ -237,7 +237,7 @@ function breakStatement(numero) {
   var suma = numero;
   for(var i = 0; i < 10; i++){
     suma = suma + 2;
-    if(summa === i){
+    if(suma === i){
        break;
     } else{
       arraynuevo.push(suma);
