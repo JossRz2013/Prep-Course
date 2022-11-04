@@ -38,7 +38,7 @@ function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
   var objetoMisterioso = {
-    numeroMisterioso: 4
+    numeroMisterioso: 999
   }
 var resultado = objetoMisterioso.numeroMisterioso * 5;
 return resultado;
@@ -138,7 +138,7 @@ function sumarLikesDeUsuario (usuario) {
   // Tu código:
   var usuario ={
     posts: [{likes:4}]};
-    var suma = 0
+    var suma = 0;
     for (var i =0; i < usuario.posts.length; i++){
       suma = suma + usuario.posts[i].likes;
     }
