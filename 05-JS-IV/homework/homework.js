@@ -30,7 +30,7 @@ function invocarMetodo (objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
-  objeto[metodo];
+  objeto[metodo]();
   }
 
 function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
@@ -38,9 +38,9 @@ function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
   var objetoMisterioso = {
-    numeroMisterioso: 2
+    numeroMisterioso
   }
-var resultado=objetoMisterioso.numeroMisterioso*5;
+var resultado = objetoMisterioso.numeroMisterioso * 5;
 return resultado;
 }
 
@@ -139,7 +139,7 @@ function sumarLikesDeUsuario (usuario) {
   var usuario ={
     posts: [{likes:2}]};
     var suma = 0
-    for (var i =0; i < posts.length; i++){
+    for (var i =0; i < usuario.posts.length; i++){
       suma = suma + usuario.posts[i].likes;
     }
   return suma;
